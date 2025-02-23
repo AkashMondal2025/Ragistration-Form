@@ -1,7 +1,4 @@
-// import FS from "filesystem";
 ("use strict");
-//const url =
-//   "https://gist.github.com/anubhavshrimal/75f6183458db8c453306f93521e93d37.js";
 
 const firstName = document.getElementById("first-name");
 const lastName = document.querySelector("#last-name");
@@ -163,13 +160,3 @@ const clearInput = () => {
   pass.value = "";
   confiPass.value = "";
 };
-// let coun = FS.CountryCodes.json();
-// // Find the country with code "IN"
-// const result = coun.find((co) => co.code === "WS");
-
-// // Print the result
-// if (result) {
-//   console.log(result.dial_code);
-// } else {
-//   console.log("Country not found");
-// }
