@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rgistration form</title>
+    <link rel="stylesheet" href="sytle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>RESISTER YOUR ACCOUNT</h1>
+
+      <form class="form" id="sign-up-form">
+        <div class="form-container">
+          <div class="input-field">
+            <div class="label" style="margin-top: 0">
+              <label for="first-name">Enter your first name</label>
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                name="name"
+                id="first-name"
+                placeholder="Enter your first name"
+                required
+              />
+            </div>
+
+            <div class="label">
+              <label for="last-name">Enter your last name</label>
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+
+            <div class="label">
+              <label for="email">Enter your email</label>
+            </div>
+            <div class="input">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="label">
+              <label for="mobile">Enter your phone no.</label>
+            </div>
+            <div class="input" id="drop-bar">
+              <div class="drop">
+                <img src="" />
+                <select name="form" id="select"></select>
+              </div>
+              <input
+                type="text"
+                name="mobile"
+                id="mobile"
+                placeholder="Enter your phone no."
+                required
+              />
+            </div>
+
+            <div class="label">
+              <label for="pass">Enter your password</label>
+            </div>
+            <div class="input togg">
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                placeholder="Enter your password"
+                required
+              />
+              <span id="togglepass"
+                ><i class="fa-regular fa-eye-slash"></i
+              ></span>
+            </div>
+
+            <div class="label" style="margin-top: 10px">
+              <label for="confpass">Confirm your password</label>
+            </div>
+            <div class="input">
+              <input
+                type="password"
+                name="confpass"
+                id="confpass"
+                placeholder="Confirm your password"
+                required
+              />
+            </div>
+            <div id="msg"></div>
+            <button type="submit" id="sub">Submit</button>
+            <button type="button" id="res">Reset</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="user-information"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
